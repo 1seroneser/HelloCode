@@ -6,4 +6,7 @@ if (y * y == x)
 {
     Console.WriteLine("Да");
 }
-Console.WriteLine("Нет");
+else
+{
+    Console.WriteLine("Нет");
+}
