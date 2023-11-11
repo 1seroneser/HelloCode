@@ -1,13 +1,11 @@
-﻿Console.Write("Введите число: ");
-int x = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число: ");
-int y = Convert.ToInt32(Console.ReadLine());
+﻿Console.Write("Введите число от 1 до 7: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-bool result = CheckSquareTwoNumbers(x, y);
+bool checkHoliday = CheckHoliday(number);
 
-Console.WriteLine(result ? "Yes" : "No");
+Console.WriteLine(checkHoliday ? "Yes" : "No");
 
-bool CheckSquareTwoNumbers(int firstNum, int secondNum)
+bool CheckHoliday(int num)
 {
-    return firstNum * firstNum == secondNum || secondNum * secondNum == firstNum;
+    return num == 6 || num == 7;
 }
