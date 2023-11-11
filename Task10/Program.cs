@@ -6,5 +6,5 @@ Console.WriteLine($"Вторая цифра числа: {showSecondDigit}");
 
 int ShowSecondDigit(int num)
 {
-    return (num / 10) % 10 > 0;
+    return (num / 10) % 10;
 }
